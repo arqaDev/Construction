@@ -1,0 +1,47 @@
+@mixin font($fw, $fz, $lh) {
+    font-weight: $fw;
+    font-size: $fz / 16 + rem;
+    line-height: $lh / $fz * 100%;
+}
+
+@mixin ellipse($bgc) {
+    width: 41.44px;
+    height: 22.6px;
+    background: $bgc;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    transform: rotate(-53.53deg);
+}
+
+@mixin rectangle($bgc, $content) {
+    position: relative;
+    min-width: 76px;
+    min-height: 76px;
+    width: 76px;
+    height: 76px;
+    background: $bgc;
+    border-radius: 5px 38px;
+
+    &::after {
+        @include font(600, 72, 16);
+        content: $content;
+        position: absolute;
+        bottom: 60px;
+        left: 29px;
+        color: #313131;
+    }
+}
+
+@mixin border($top: auto, $right: auto, $bottom: auto, $left: auto, $height) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+    width: 8px;
+    height: $height;
+    background: $blueColor;
+
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+}

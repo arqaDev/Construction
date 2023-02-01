@@ -1,0 +1,151 @@
+@import './assets/_colors';
+@import './assets/_mixins';
+@import './assets/_templates';
+
+
+.blogs {
+    .blogs__container {
+        padding-bottom: 140px;
+
+        @media (max-width: 424.98px) {
+            padding-bottom: 40px;
+        }
+
+        .blogs__content {
+            .blogs__head {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .blogs__title {
+                    @include font(600, 54, 56);
+                    color: $titleColor;
+
+                    @media (max-width: 424.98px) {
+                        text-align: center;
+                    }
+                }
+                .blogs__subtitle {
+                    @include font(400, 20, 28);
+                    margin-top: 30px;
+                    text-align: center;
+                    color: $textColor;
+                }
+            }
+
+            .blogs__body {
+                margin-top: 80px;
+                height: 473px;
+                overflow: auto;
+
+                &::-webkit-scrollbar {
+                    width: 9px;
+                  };
+                  
+                &::-webkit-scrollbar-thumb {
+                background: $blueColor;
+                };
+                  
+                &::-webkit-scrollbar-track {
+                background: #cbcbcb;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                background-clip: padding-box;
+                };
+
+                @media (max-width: 424.98px) {
+                    margin-top: 40px;
+                }
+
+                .blogs__pictures {
+                    display: grid;
+                    grid-gap: 60px;
+                    grid-template-columns: repeat(2, 42.8%);
+
+                    @media (max-width: 767.98px) {
+                        grid-template-columns: repeat(1, 90%);
+                        margin-right: 20px;
+                        grid-gap: 30px;
+                    }
+
+                    @media (max-width: 424.98px) {
+                        grid-gap: 10px;
+                    }
+
+                    .blogs__picture {
+                        position: relative;
+
+                        .blogs-picture__link {
+                            .blogs-picture__img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            .blogs-picture__caption {
+                                position: absolute;
+                                bottom: 59px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                                width: 100%;
+                                color: #ffffff;
+
+                                @media (max-width: 424.98px) {
+                                    bottom: 24px;
+                                }
+    
+                                .blogs-picture__title {
+                                    @include font(700, 27, 34);
+
+                                    @media (max-width: 500px) {
+                                        @include font(600, 18, 24);
+                                    }
+
+                                }
+
+                                .blogs-picture__subtitle {
+                                    @include font(400, 16, 20);
+                                    margin: 22px 0 0;
+                                }
+
+                                .blogs-picture__caption-link {
+                                    @include font(400, 17, 20);
+                                    width: 202px;
+                                    height: 65px;
+                                    display: none;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-align: center;
+                                    letter-spacing: -0.5px;
+                                    margin-top: 35px;
+                                    box-shadow: none;
+                                    border: 1px solid $whiteColor;
+                                    border-radius: 40px 5px;
+                                    color: $whiteColor;
+                                    background-color: transparent;
+                                    transition: 0.3s ease;
+
+                                    &:hover {
+                                        background-color: #418bb3;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .blogs-picture__caption .blogs-picture__caption-link {
+                                    display: flex;
+
+                                    @media (max-width: 767.98px) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

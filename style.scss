@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,regular,500,600,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,regular,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,regular&display=swap);
+@import './assets/_mixins';
+@import './_header';
+@import './_main';
+@import './_constractionExp';
+@import './_engineers';
+@import './_message';
+@import './_contact';
+@import './_blogs';
+@import './_subscribe';
+@import './_footer';
+
+@font-face {
+	font-family: 'Circular Std';
+	src: url('/fonts/FontsFree-Net-Circular-Std-Book.eot');
+	src: local('☺'), url('/fonts/FontsFree-Net-Circular-Std-Book.woff') format('woff'), url('/fonts/FontsFree-Net-Circular-Std-Book.ttf') format('truetype'), url('/fonts/FontsFree-Net-Circular-Std-Book.svg') format('svg');
+	font-weight: 450;
+	font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1210px;  
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+._title {
+    @include font(700, 64, 76.8);
+}

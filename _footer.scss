@@ -1,0 +1,156 @@
+@import './assets/_colors';
+@import './assets/_mixins';
+
+.footer {
+    .footer__container {
+        .footer__content {
+            padding: 15px 20px;
+
+            .footer__head {
+                display: flex;
+                padding-bottom: 68px;
+
+                @media (max-width: 767.98px) {
+                    flex-direction: column;
+                }
+
+                .footer__subscribe {
+                    .subscribe__logo {
+                        @include font(600, 25, 38);
+                        letter-spacing: -0.06em;
+                        color: $blueColor;
+                    }
+                    .subscribe__text {
+                        @include font(400, 16, 28);
+                        max-width: 236px;
+                        margin: 30px 0 40px 0;
+                        color: $textColor;
+                    }
+                    .subscribe__links {
+                        display: flex;
+                        gap: 16px;
+                    }
+                }
+
+                .footer__navbar {
+                    display: flex;
+                    margin-left: 179px;
+                    width: 715px;
+                    justify-content: space-between;
+                    align-items: baseline;
+
+                    @media (max-width: 991.98px) {
+                        margin-left: 70px;
+                    }
+
+                    @media (max-width: 767.98px) {
+                        width: auto;
+                        margin: 40px 0 0;
+                    }
+
+                    @media (max-width: 500px) {
+                        flex-direction: column;
+                    }
+
+                    .navbar__resources,
+                    .navbar__company
+                    {
+                        .navbar__title {
+                            @include font(600, 18, 27);
+                            color: $titleColor;
+                        }
+
+                        .navbar__items {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 18px;
+                            margin-top: 37px;
+
+                            @media (max-width: 500px) {
+                                margin-top: 18px;
+                            }
+
+                            .navbar__item {
+                                .navbar__link {
+                                    @include font(400, 16, 24);
+                                    color: $textColor;
+                                }
+                            }
+                        }
+                    }
+
+                    .navbar__company {
+                        margin: 0 20px;
+
+                        @media (max-width: 500px) {
+                            margin: 20px 0;
+                        }
+                    }
+
+                    .navbar__touch {
+                        .navbar__title {
+                            @include font(600, 18, 27);
+                            color: $titleColor;
+                        }
+                        .navbar__form {
+                            position: relative;
+                            margin-top: 37px;
+                            max-width: 174px;
+                            width: 174px;
+                            max-height: 40px;
+                            height: 40px;
+                            background: #fafafa;
+                            border-radius: 4px;
+
+                            @media (max-width: 500px) {
+                                margin-top: 18px;
+                            }
+
+                            .navbar__mail {
+                                @include font(400, 10, 15);
+                                width: 146px;
+                                height: 100%;
+                                padding: 12px;
+                                border: none;
+                                outline: none;
+                                background: inherit;
+                                border-radius: inherit;
+                                color: $textColor;
+                            }
+
+                            .navbar__mail-btn {
+                                position: absolute;
+                                right: 12px;
+                                top: 12px;
+                                width: 16px;
+                                height: 16px;
+                                background-color: transparent;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer__tail {
+                display: flex;
+                justify-content: center;
+                padding: 40px;
+                border-top: 1px solid #f4f4f4;
+
+                .footer__copyright {
+                    @include font(500, 14, 21);
+                    color: #c2c2c2;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,89 @@
+@import './assets/_colors';
+@import './assets/_mixins';
+
+.message {
+    background-image: url('/assets/images/message_img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 939px;
+    margin-bottom: 140px;
+    padding: 20px;
+
+    @media (max-width: 1023.98px) {
+        margin-bottom: 40px;
+    }
+
+    .message__container {
+        .message__content {
+            margin-top: 176px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @media (max-width: 767.98px) {
+                margin-top: 40px;
+            }
+            
+            .message__title {
+                @include font(500, 54, 76);
+                color: #fafafa;
+                text-align: center;
+
+                @media (max-width: 424.98px) {
+                    @include font(500, 42, 56);
+                }
+            }
+            .message__text {
+
+                @media (max-width: 767.98px) {
+                    text-align: center;
+                    margin-top: 30px;
+                }
+                .message__quote-icon {
+                    width: 7.7%;
+                    
+                    &:first-child {
+                        margin-left: 0;
+
+                        @media (max-width: 767.98px) {
+                            margin-right: 100%;
+                        }
+                    }
+
+                    &:last-child {
+                        display: flex;
+                        margin-left: auto;
+                        margin-right: 65px;
+
+                        @media (max-width: 424.98px) {
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                .message__quote {
+                    @include font(400, 18, 28);
+                    color: #fafafa;
+                    margin-left: 157px;
+                    margin-right: 157px;
+                    max-width: 857px;
+
+                    @media (max-width: 767.98px) {
+                        margin-left: 45px;
+                        margin-right: 85px;
+                    }
+
+                    @media (max-width: 424.98px) {
+                        max-width: 100%;
+                        margin-left: 20px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

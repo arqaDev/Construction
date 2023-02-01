@@ -1,0 +1,176 @@
+@import './assets/_colors';
+@import './assets/_mixins';
+@import './assets/_templates';
+
+@function rem($px) {
+    @return calc($px / 16) + rem
+};
+
+.header {
+    .header__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 70px;
+        height: rem(38);
+
+        @media (max-width: 767.98px) {
+            margin-top: 10px;
+        }
+
+        .header__logo {
+            @include font(600, 25, 38);
+            letter-spacing: -0.06em;
+            color: $blueColor;
+        }
+
+        .header__menu {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            .menu__list {
+                display: flex;
+                align-items: center;
+                margin-left: rem(20);
+                gap: 36px;
+
+                .menu__item {
+                    @include font(400, 18, 27);
+                    position: relative;
+                    padding-bottom: 3px;
+
+                    @media (max-width: 767.98px) {
+                        @include font(500, 24, 27);
+                    }
+
+                    .menu__link {
+                        color: $whiteColor;
+
+                        @media (max-width: 1145px) {
+                            color: $blueColor;
+                        }
+
+                        @media (max-width: 767.98px) {
+                            color: $whiteColor;
+                        }
+                    }
+
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        display: block;
+                        left: 50%;
+                        height: 4px;
+                        width: 0%;
+                        -webkit-transition: width .3s ease-in-out;
+                        -moz--transition: width .3s ease-in-out;
+                        transition: width .3s ease-in-out;
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        transform: translateX(-50%);
+                        background-color: $whiteColor;
+
+                        @media (max-width: 991.98px) {
+                            background-color: $blueColor;
+                        }
+                    }
+
+                    &:hover:after,
+                    &:focus:after {
+                        width: 100%;
+                    }
+
+                    &:first-child {
+                        font-weight: 600;
+
+                        @media (max-width: 767.98px) {
+                            font-weight: 500;
+                        }
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            width: 4px;
+                            height: 4px;
+                            bottom: 0;
+                            right: 50%;
+                            border-radius: 50%;
+                            background-color: $whiteColor;
+
+                            @media (max-width: 1145px) {
+                                background-color: $blueColor;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu__close-btn {
+                display: none;
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                width: 33px;
+                height: 33px;
+                background-color: transparent;
+                border: none;
+                z-index: 1000;
+
+                &::before, &::after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 3px;
+                    background: $whiteColor;
+                }
+
+                &::before {
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        .header__burger-menu {
+            @extend %burgerMenu;
+            display: none;
+
+            @media (max-width: 767.98px) {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header .header__container .header__menu{
+        position: fixed;
+        top: 0;
+        right: -120%;
+        width: 100%;
+        min-height: 100vh;
+        background-color: $blueColor;
+        z-index: 1000;
+
+        &.show {
+            right: 0;
+
+            .menu__list {
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+            }
+
+            .menu__close-btn {
+                display: block;
+            }
+        }
+    }
+}

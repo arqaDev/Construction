@@ -1,0 +1,48 @@
+@import './assets/_colors';
+@import './assets/_mixins';
+@import './assets/_templates';
+
+
+.subscribe {
+    .subscribe__container {
+        padding-bottom: 140px;
+
+        @media (max-width: 424.98px) {
+            padding-bottom: 40px;
+        }
+
+        .subscribe__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .subscribe__title {
+                @include font(500, 54, 56);
+                color: $titleColor;
+                max-width: 462px;
+            }
+            .subscribe__subtitle {
+                @include font(400, 20, 28);
+                margin: 40px 0;
+                color: $textColor;
+            }
+            .subscribe__link {
+                @extend %link;
+                width: 220px;
+                
+                span {
+                    color: #ffffff;
+                }
+                .subscribe__arrow {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+
+

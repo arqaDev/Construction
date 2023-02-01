@@ -1,0 +1,106 @@
+@import './_colors';
+@import './_mixins';
+
+
+%burgerMenu {
+    position: relative;
+    min-width: 37px;
+    min-height: 25px;
+    margin-left: 36px;
+    cursor: pointer;
+
+    & span {
+        position: absolute;
+        background-color: $blueColor;
+        left: 0;
+        top: 9px;
+        width: 100%;
+        height: 3px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $blueColor;
+        transition: 0.3s ease;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    & span {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+%dots {
+    position: relative;
+    width: 5px;
+    height: 22px;
+    cursor: pointer;
+    
+    & span {
+        position: absolute;
+        background-color: $titleColor;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        border-radius: 50%;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 5px;
+        width: 100%;
+        background-color: $titleColor;
+        transition: 0.3s ease;
+        border-radius: 50%;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    & span {
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+%link {
+    @include font(500, 17, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.5px;
+    width: 214px;
+    height: 64px;
+    border-radius: 40px 5px;
+    box-shadow: 0px 64.8148px 46.8519px rgba(64, 162, 213, 0.0759259), 0px 38.5185px 25.4815px rgba(64, 162, 213, 0.0607407), 0px 20px 13px rgba(64, 162, 213, 0.05), 0px 8.14815px 6.51852px rgba(64, 162, 213, 0.0392593), 0px 1.85185px 3.14815px rgba(64, 162, 213, 0.0240741);
+    background: $blueColor;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:active
+    {
+        background-color: #418bb3;
+    }
+}

@@ -1,0 +1,130 @@
+@import './assets/_colors';
+@import './assets/_mixins';
+@import './assets/_templates';
+
+.experience {
+    .experience__container {
+        padding-bottom: 140px;
+
+        @media (max-width: 424.98px) {
+            padding-bottom: 40px;
+        }
+    
+        .experience__content {
+            .experience__header {
+                display: flex;
+                justify-content: space-between;
+    
+                @media (max-width: 768px) {
+                    flex-direction: column-reverse;
+                }
+    
+                .experience__info {
+                    margin: 37px 30px 0 20px;
+                    max-width: 541px;
+    
+                    .experience__text {
+                        @include font(400, 18, 28);
+                        color: #6b6b6b;
+                    }
+    
+                    .experience__link {
+                        @extend %link;
+                        margin-top: 30px;
+    
+                        & a {
+                            color: $whiteColor;
+                        }
+                    }
+                }
+    
+                .experience__title {
+                    @include font(500, 54, 65);
+                    color: #313131;
+                    max-width: 521px;
+    
+                    @media (max-width: 768px) {
+                        margin-left: 20px;
+                        max-width: 100%;
+                    }
+    
+                    @media (max-width: 425px) {
+                        @include font(500, 38, 50);
+                    }
+                }
+            }
+    
+            .experience__body {
+                display: flex;
+                margin-top: 109px;
+    
+                @media (max-width: 1023.98px) {
+                    align-items: flex-start;
+                }
+    
+                @media (max-width: 424.98px) {
+                    margin-top: 59px;
+                }
+    
+                .experience__img {
+                    width: 49.9%;
+                    height: 145.5%;
+    
+                    @media (max-width: 767.98px) {
+                        display: none;
+                    }
+    
+                    & img {
+                        object-fit: cover;
+                        object-position: center;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+    
+                .experience__points {
+                    margin: 0 20px 0 68px;
+                    max-width: 498px;
+    
+                    @media (max-width: 767.98px) {
+                        margin: 0 0 0 20px;
+                        max-width: 100%;
+                    }
+    
+                    .experience__point {
+                        display: flex;
+                        margin-top: 168px;
+    
+                        @media (max-width: 1023.98px) {
+                            margin-top: 60px;
+                        }
+    
+                        .point__first-rectangle {
+                            @include rectangle(#40a2d5, '01');
+                        }
+    
+                        .point__second-rectangle {
+                            @include rectangle(#fe843285, '02');
+                        }
+    
+                        .point__third-rectangle {
+                            @include rectangle(#b5e4a5, '03');
+                        }
+        
+                        .point__text {
+                            @include font(400, 18, 28);
+                            margin-left: 63px;
+                            max-width: 359px;
+                            color: #6b6b6b;
+    
+                            @media (max-width: 767.98px) {
+                                margin-right: 20px;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
