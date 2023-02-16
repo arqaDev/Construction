@@ -104,3 +104,9 @@
         background-color: #418bb3;
     }
 }
+
+%contentCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

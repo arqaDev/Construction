@@ -13,10 +13,8 @@
 
         .blogs__content {
             .blogs__head {
-                display: flex;
+                @extend %contentCenter;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
 
                 .blogs__title {
                     @include font(600, 54, 56);

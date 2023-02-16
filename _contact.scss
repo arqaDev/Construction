@@ -31,10 +31,8 @@
 
         .contact__content {
             .contact__head {
-                display: flex;
+                @extend %contentCenter;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
 
                 .contact__title {
                     @include font(600, 54, 56);
@@ -131,9 +129,6 @@
                                 height: 18px;
                                 background-color: $whiteColor;
                             }
-
-                            
-                                
                         }
                     }
 
@@ -145,6 +140,7 @@
                         margin-top: 10px;
                     }
                 }
+                
                 .contact__map {
                     min-width: 66.8%;
                     margin-top: 107px;

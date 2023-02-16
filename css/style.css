@@ -104,6 +104,18 @@
   background-color: #418bb3;
 }
 
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .blogs .blogs__container .blogs__content .blogs__head, .contact .contact__container .contact__content .contact__head, .message .message__container .message__content, .engineers .engineers__container .engineers__content .engineers__carousel, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .engineers__subtitle, .main .main__container .main__content .main__stats .main__info, .header .header__container .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,15 +143,6 @@
 }
 .header .header__container .header__menu {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -390,6 +393,18 @@
   background-color: #418bb3;
 }
 
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .blogs .blogs__container .blogs__content .blogs__head, .contact .contact__container .contact__content .contact__head, .message .message__container .message__content, .engineers .engineers__container .engineers__content .engineers__carousel, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .engineers__subtitle, .main .main__container .main__content .main__stats .main__info, .header .header__container .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main .main__container {
   position: relative;
   padding-bottom: 140px;
@@ -541,15 +556,6 @@
 }
 .main .main__container .main__content .main__stats .main__info {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   top: 10px;
   left: -6px;
   gap: 1.4375rem;
@@ -806,6 +812,18 @@
 }
 .subscribe .subscribe__container .subscribe__content .subscribe__link:hover, .contact .contact__container .contact__content .contact__body .contact__form .contact__send-btn:hover, .experience .experience__container .experience__content .experience__header .experience__info .experience__link:hover, .main .main__container .main__content .main__links .main__link:hover, .subscribe .subscribe__container .subscribe__content .subscribe__link:active, .contact .contact__container .contact__content .contact__body .contact__form .contact__send-btn:active, .experience .experience__container .experience__content .experience__header .experience__info .experience__link:active, .main .main__container .main__content .main__links .main__link:active {
   background-color: #418bb3;
+}
+
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .blogs .blogs__container .blogs__content .blogs__head, .contact .contact__container .contact__content .contact__head, .message .message__container .message__content, .engineers .engineers__container .engineers__content .engineers__carousel, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .engineers__subtitle, .header .header__container .header__menu, .main .main__container .main__content .main__stats .main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .experience .experience__container {
@@ -1098,6 +1116,18 @@
   background-color: #418bb3;
 }
 
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .blogs .blogs__container .blogs__content .blogs__head, .contact .contact__container .contact__content .contact__head, .message .message__container .message__content, .engineers .engineers__container .engineers__content .engineers__carousel, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .engineers__subtitle, .header .header__container .header__menu, .main .main__container .main__content .main__stats .main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .engineers {
   position: relative;
 }
@@ -1135,13 +1165,6 @@
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 140%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
   margin-top: 30px;
   color: #6b6b6b;
 }
@@ -1159,6 +1182,16 @@
   .engineers .engineers__container .engineers__content .swiper {
     overflow: scroll;
     margin: 80px 0 0 0;
+  }
+}
+@media (max-width: 599px) {
+  .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card {
@@ -1180,19 +1213,10 @@
           justify-content: space-between;
 }
 .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 19px;
 }
 .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body .card__img {
@@ -1222,19 +1246,10 @@
   color: #6b6b6b;
 }
 .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 47px;
 }
 .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer .card__number {
@@ -1253,14 +1268,6 @@
 }
 .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer .card__mail:hover {
   color: #418bb3;
-}
-.engineers .engineers__container .engineers__content .engineers__carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media (max-width: 991.98px) {
   .engineers .engineers__container .engineers__content .engineers__carousel {
@@ -1407,12 +1414,6 @@
 }
 .message .message__container .message__content {
   margin-top: 176px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1447,11 +1448,12 @@
   width: 7.7%;
 }
 .message .message__container .message__content .message__text .message__quote-icon:first-child {
-  margin-left: 0;
+  margin-left: 66px;
 }
 @media (max-width: 767.98px) {
   .message .message__container .message__content .message__text .message__quote-icon:first-child {
     margin-right: 100%;
+    margin-left: 0;
   }
 }
 .message .message__container .message__content .message__text .message__quote-icon:last-child {
@@ -1591,6 +1593,18 @@
   background-color: #418bb3;
 }
 
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .blogs .blogs__container .blogs__content .blogs__head, .contact .contact__container .contact__content .contact__head, .header .header__container .header__menu, .main .main__container .main__content .main__stats .main__info, .engineers .engineers__container .engineers__content .engineers__subtitle, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .engineers__carousel, .message .message__container .message__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contact .contact__container .contact__content .contact__body .contact__form .contact__input .contact__name,
 .contact .contact__container .contact__content .contact__body .contact__form .contact__input .contact__email,
 .contact .contact__container .contact__content .contact__body .contact__form .contact__input .contact__subject,
@@ -1635,19 +1649,10 @@
   }
 }
 .contact .contact__container .contact__content .contact__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .contact .contact__container .contact__content .contact__head .contact__title {
   font-weight: 600;
@@ -1885,6 +1890,18 @@
   background-color: #418bb3;
 }
 
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .blogs .blogs__container .blogs__content .blogs__head, .header .header__container .header__menu, .main .main__container .main__content .main__stats .main__info, .engineers .engineers__container .engineers__content .engineers__subtitle, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .engineers__carousel, .message .message__container .message__content, .contact .contact__container .contact__content .contact__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .blogs .blogs__container {
   padding-bottom: 140px;
 }
@@ -1894,19 +1911,10 @@
   }
 }
 .blogs .blogs__container .blogs__content .blogs__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .blogs .blogs__container .blogs__content .blogs__head .blogs__title {
   font-weight: 600;
@@ -2157,6 +2165,18 @@
   background-color: #418bb3;
 }
 
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .subscribe .subscribe__container .subscribe__content, .header .header__container .header__menu, .main .main__container .main__content .main__stats .main__info, .engineers .engineers__container .engineers__content .engineers__subtitle, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .engineers__carousel, .message .message__container .message__content, .contact .contact__container .contact__content .contact__head, .blogs .blogs__container .blogs__content .blogs__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .subscribe .subscribe__container {
   padding-bottom: 140px;
 }
@@ -2166,19 +2186,10 @@
   }
 }
 .subscribe .subscribe__container .subscribe__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 .subscribe .subscribe__container .subscribe__content .subscribe__title {
@@ -2203,6 +2214,120 @@
 }
 .subscribe .subscribe__container .subscribe__content .subscribe__link .subscribe__arrow {
   margin-left: 20px;
+}
+
+.header .header__container .header__burger-menu {
+  position: relative;
+  min-width: 37px;
+  min-height: 25px;
+  margin-left: 36px;
+  cursor: pointer;
+}
+.header .header__container .header__burger-menu span {
+  position: absolute;
+  background-color: #40a2d5;
+  left: 0;
+  top: 9px;
+  width: 100%;
+  height: 3px;
+}
+.header .header__container .header__burger-menu::before, .header .header__container .header__burger-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #40a2d5;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.header .header__container .header__burger-menu::before {
+  top: 0;
+}
+.header .header__container .header__burger-menu::after {
+  bottom: 0;
+}
+.header .header__container .header__burger-menu span {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu {
+  position: relative;
+  width: 5px;
+  height: 22px;
+  cursor: pointer;
+}
+.engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu span {
+  position: absolute;
+  background-color: #313131;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-radius: 50%;
+}
+.engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu::before, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #313131;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 50%;
+}
+.engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu::before {
+  top: 0;
+}
+.engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu::after {
+  bottom: 0;
+}
+.engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__header .card__menu span {
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.main .main__container .main__content .main__links .main__link, .experience .experience__container .experience__content .experience__header .experience__info .experience__link, .contact .contact__container .contact__content .contact__body .contact__form .contact__send-btn, .subscribe .subscribe__container .subscribe__content .subscribe__link {
+  font-weight: 500;
+  font-size: 1.0625rem;
+  line-height: 117.6470588235%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: -0.5px;
+  width: 214px;
+  height: 64px;
+  border-radius: 40px 5px;
+  -webkit-box-shadow: 0px 64.8148px 46.8519px rgba(64, 162, 213, 0.0759259), 0px 38.5185px 25.4815px rgba(64, 162, 213, 0.0607407), 0px 20px 13px rgba(64, 162, 213, 0.05), 0px 8.14815px 6.51852px rgba(64, 162, 213, 0.0392593), 0px 1.85185px 3.14815px rgba(64, 162, 213, 0.0240741);
+          box-shadow: 0px 64.8148px 46.8519px rgba(64, 162, 213, 0.0759259), 0px 38.5185px 25.4815px rgba(64, 162, 213, 0.0607407), 0px 20px 13px rgba(64, 162, 213, 0.05), 0px 8.14815px 6.51852px rgba(64, 162, 213, 0.0392593), 0px 1.85185px 3.14815px rgba(64, 162, 213, 0.0240741);
+  background: #40a2d5;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.main .main__container .main__content .main__links .main__link:hover, .experience .experience__container .experience__content .experience__header .experience__info .experience__link:hover, .contact .contact__container .contact__content .contact__body .contact__form .contact__send-btn:hover, .subscribe .subscribe__container .subscribe__content .subscribe__link:hover, .main .main__container .main__content .main__links .main__link:active, .experience .experience__container .experience__content .experience__header .experience__info .experience__link:active, .contact .contact__container .contact__content .contact__body .contact__form .contact__send-btn:active, .subscribe .subscribe__container .subscribe__content .subscribe__link:active {
+  background-color: #418bb3;
+}
+
+.footer .footer__container .footer__content .footer__tail, .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__touch .navbar__form .navbar__mail-btn, .header .header__container .header__menu, .main .main__container .main__content .main__stats .main__info, .engineers .engineers__container .engineers__content .engineers__subtitle, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__body, .engineers .engineers__container .engineers__content .swiper .swiper-wrapper .swiper-slide .engineers__card .card__footer, .engineers .engineers__container .engineers__content .engineers__carousel, .message .message__container .message__content, .contact .contact__container .contact__content .contact__head, .blogs .blogs__container .blogs__content .blogs__head, .subscribe .subscribe__container .subscribe__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .footer__container .footer__content {
@@ -2296,7 +2421,7 @@
 }
 @media (max-width: 500px) {
   .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__resources .navbar__items,
-.footer .footer__container .footer__content .footer__head .footer__navbar .navbar__company .navbar__items {
+  .footer .footer__container .footer__content .footer__head .footer__navbar .navbar__company .navbar__items {
     margin-top: 18px;
   }
 }
@@ -2356,24 +2481,9 @@
   width: 16px;
   height: 16px;
   background-color: transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border: none;
 }
 .footer .footer__container .footer__content .footer__tail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 40px;
   border-top: 1px solid #f4f4f4;
 }

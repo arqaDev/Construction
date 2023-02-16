@@ -25,10 +25,8 @@
         }
 
         .header__menu {
+            @extend %contentCenter;
             position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             transition: 0.3s;
 
             .menu__list {

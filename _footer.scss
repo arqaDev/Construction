@@ -1,5 +1,7 @@
 @import './assets/_colors';
 @import './assets/_mixins';
+@import './assets/_templates.scss';
+
 
 .footer {
     .footer__container {
@@ -119,15 +121,13 @@
                             }
 
                             .navbar__mail-btn {
+                                @extend %contentCenter;
                                 position: absolute;
                                 right: 12px;
                                 top: 12px;
                                 width: 16px;
                                 height: 16px;
                                 background-color: transparent;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
                                 border: none;
                             }
                         }
@@ -136,8 +136,7 @@
             }
 
             .footer__tail {
-                display: flex;
-                justify-content: center;
+                @extend %contentCenter;
                 padding: 40px;
                 border-top: 1px solid #f4f4f4;
 

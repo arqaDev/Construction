@@ -24,9 +24,7 @@
             }
             .engineers__subtitle {
                 @include font(400, 20, 28);
-                display: flex;
-                justify-content: center;
-                text-align: center;
+                @extend %contentCenter;
                 margin-top: 30px;
                 color: $textColor;
             }
@@ -44,6 +42,11 @@
 
                 .swiper-wrapper {
                     .swiper-slide {
+                        @media (max-width: 599px) {
+                            display: flex;
+                            justify-content: center;
+                        }
+
                         .engineers__card {
                             max-width: 362px;
                             height: 435px;
@@ -63,10 +66,8 @@
                             }
         
                             .card__body {
-                                display: flex;
+                                @extend %contentCenter;
                                 flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
                                 margin-top: 19px;
         
                                 .card__img {
@@ -93,10 +94,8 @@
                             }
                             
                             .card__footer {
-                                display: flex;
+                                @extend %contentCenter;
                                 flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
                                 margin-top: 47px;
         
                                 .card__number {
@@ -121,8 +120,7 @@
             }
                 
             .engineers__carousel {
-                display: flex;
-                justify-content: center;
+                @extend %contentCenter;
 
                 @media (max-width: 991.98px) {
                     margin-top: 50px;
